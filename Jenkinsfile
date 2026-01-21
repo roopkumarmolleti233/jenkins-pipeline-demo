@@ -23,7 +23,7 @@ pipeline {
 
         stage('Run Script') {
             steps {
-                sh './app.sh'
+                sh 'chmod +x app.sh && ./app.sh'
             }
         }
     }
